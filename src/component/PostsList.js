@@ -35,23 +35,23 @@ const PostsList = (props) => {
   }, [posts]);
 
   return (
-    <div>
-      <div>
+    <div className="row justify-content-center">
+      <div className="mt-5 col-12  col-sm-12 col-md-12 col-lg-10 col-xl-10 mb-5">
         <input
+          className="form-control"
           type="text"
           name="search"
           value={searchInput}
           onChange={handleChange}
-          placeholder="search by name or id"
+          placeholder="search by id"
         />
       </div>
-      <br />
-      <div>
-        <table>
-          <thead>
+      <div className="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-10">
+        <table className="table table-bordered table-hover">
+          <thead className="thead-light">
             <tr>
               <th>Id</th>
-              <th>Posts</th>
+              <th>Posts </th>
             </tr>
           </thead>
           <tbody>
