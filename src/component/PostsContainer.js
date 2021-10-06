@@ -1,11 +1,11 @@
 import PostList from "./PostsList";
 
-const Posts = (props) => {
+const PostsContainer = (props) => {
   return (
-    <div>
+    <div className="container">
       <PostList />
     </div>
   );
 };
 
-export default Posts;
+export default PostsContainer;
